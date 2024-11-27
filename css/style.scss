@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{ 
+    list-style-type: none;
+    display: flex;
+    background-color: violet;
+    padding: 10px;
+    justify-content: flex-end;
+    li{
+        a{
+            text-decoration: none;
+            padding: 20px;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
