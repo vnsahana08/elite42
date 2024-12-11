@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="css/style.scss" rel='stylesheet'>
+</head>
+<body>
+    <div class="wrappear">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="email"  placeholder="Email or phone" id="email" >
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" id="password"  >
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="forgotPass.html">Forgot Password</a>
+            </div>
+            <button type="submit" class="btn" onclick="func()"><a href="lang.html">Login</a></button>
+            
+        </form>
+    </div>
+
+    <script>
+        function func(){
+            var email = document.getElementById("email").value;
+            var password = document.getElementById('password').value;
+            if(email == 'srushti@gmail.com' && password == '123456'){
+           
+            window.open("lang.html")
+            }
+            else{
+                alert("Wrong Entry");
+                return;
+            }
+        }
+       
+        
+
+    </script>
+</body>
+</html>
